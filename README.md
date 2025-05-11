@@ -31,6 +31,7 @@ Mettre en place un pipeline local capable de :
 ```bash
 git clone  https://github.com/Khalilz00/log-pipeline-elk.git
 cd log-pipeline-elk
+cd log-pipeline
 ```
 ### 2. Lancer la stack
 
