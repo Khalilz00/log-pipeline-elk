@@ -32,4 +32,34 @@ Mettre en place un pipeline local capable de :
 git clone  https://github.com/Khalilz00/log-pipeline-elk.git
 cd log-pipeline-elk
 ```
+### 2. Lancer la stack
 
+```bash
+docker-compose up
+```
+
+Cela démarre 3 conteneurs : `elasticsearch`, `logstash`, `kibana`
+
+### 3. Accéder à Kibana
+
+Ouvre (http://localhost:5601)  
+Puis :
+- Va dans **Discover**
+- Crée un **Data View** avec l’index `apache-logs` et le champ de temps `@timestamp`
+- Explore les logs en temps réel
+
+---
+### 3. Accéder à Kibana
+Ouvre (http://localhost:5601)
+Puis :
+- Va dans **Discover**
+- Crée un **Data View** avec l’index `apache-logs` et le champ de temps `@timestamp`
+- Explore les logs en temps réel
+
+---
+
+##  Possibilités d’amélioration
+
+- Intégration de Filebeat  
+- Analyse de logs NGINX ou applicatifs  
+- Ajout de scripts de génération automatique de logs
